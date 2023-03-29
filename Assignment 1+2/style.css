@@ -3,8 +3,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: darkgray;
+
   }
+
+body {
+    background-image: url("https://multimatic.wpengine.com/wp-content/uploads/2022/12/Ford_GTMkIV_02_1920x1080.jpg?w=1920&q=75");
+    background-color: darkgray;
+
+}
 
 nav {
     list-style-type: none;
