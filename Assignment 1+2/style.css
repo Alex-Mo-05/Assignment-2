@@ -1,0 +1,25 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: darkgray;
+  }
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}   
+
+.navbar {
+    float: left;
+}
+
+
+
+.nav {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
