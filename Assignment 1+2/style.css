@@ -8,10 +8,52 @@
 
 
 body {
+    width: 100%;
     background-image: url('https://multimatic.wpengine.com/wp-content/uploads/2022/12/Ford_GTMkIV_02_1920x1080.jpg?w=1920&q=75');
+    background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+.navbar {
+    width: 95%;
+    padding: 20px;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
  
 
@@ -24,7 +66,7 @@ nav {
 }   
 
 .navbar {
-    float: left;
+    float: center;
 }
 
 
