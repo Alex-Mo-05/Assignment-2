@@ -72,7 +72,7 @@ header.index {
 }
   
 .container {
-    height: 100vh;
+    height: 100%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -94,6 +94,7 @@ header.index {
     background-size:100vw auto;
     background-position: center;
     background-attachment: fixed;
+    top: 0px;
     
 }
    
@@ -161,4 +162,13 @@ header.gallery {
   
   .car p {
     margin: 0;
+  }
+
+/* history Css */
+
+.sectionsHistory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
   }
