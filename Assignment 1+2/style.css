@@ -7,7 +7,6 @@
 
   }
 
-
 body {
 
     width: 100%;
@@ -28,10 +27,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
-
-
 
 .right {
     float: right;
@@ -60,7 +56,6 @@ nav .right a:hover {
 
 }
 
-
 .frontPageText h1 {
     position: fixed;
     right: 60%;
@@ -71,23 +66,27 @@ nav .right a:hover {
 
 }
 
-header {
-    height: 200vh;
+header.index {
+    height: 790px;
 
-  }
+}
   
 .container {
     height: 100vh;
     left: 0;
     width: 100%;
+    overflow: hidden;
+    position: absolute;
 
   
 }
    
 .title_wrapper {
     position: fixed;
+    display: block;
+    margin: auto;
     width: 100%;
-    top: 0px;
+    top: 0%;
 }
   
 .container_image {
@@ -97,11 +96,11 @@ header {
     background-attachment: fixed;
     
 }
-  
-  
+   
 section {
     margin: auto;
     max-width: 800px;
+    height: 600px;
 }
   
 section h2 {
@@ -110,5 +109,51 @@ section h2 {
 }
   
 section p {
+    padding-bottom: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
+
+/* Gallery css */
+
+header.gallery {
+    color: gray;
+    padding: 0px;
+    top: 0;
+    background-color: #181818;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .car {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .car img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .car h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .car p {
+    margin: 0;
+  }
