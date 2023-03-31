@@ -79,7 +79,7 @@ header {
 .container {
     clip: rect(0, auto, auto, 0);
     overflow: hidden;
-    position: absolute;
+    position: relative;
     height: 100vh;
     left: 0;
     width: 100%;
