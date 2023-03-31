@@ -7,7 +7,7 @@
 
   }
 
-body {
+body.home {
 
     width: 100%;
     background-color: white;
@@ -115,11 +115,16 @@ section p {
 
 /* Gallery css */
 
+body.gallery {
+    background-color: darkgrey;
+}
+
 header.gallery {
-    color: gray;
+    position: relative;
+    color: black;
     padding: 0px;
-    top: 0;
-    background-color: #181818;
+    top:auto;
+    width: auto;
   }
   
   h1 {
