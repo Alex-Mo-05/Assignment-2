@@ -57,7 +57,7 @@ nav .right a:hover {
 }
 
 .frontPageText h1 {
-    position: fixed;
+    position: absolute;
     right: 60%;
     top: 200px;
     color: whitesmoke;
