@@ -1,28 +1,20 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: darkgray;
-  }
-
-
-nav {
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: darkgray;
 }
 
-a:link {
-  margin: 5px;
-  padding: 15px;
-  border: 2px;
-  border-color: black;
-  text-decoration: none;
-  color: black;
-  list-style-type: none;
-  text-align: center;
+.container {
+  height: 200 vh;
+  width: 80%;
+}
+
+#containertop {
+    
+}
+
+#containerbot {
+  align-items: center;
 }

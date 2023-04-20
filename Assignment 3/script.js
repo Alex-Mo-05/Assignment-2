@@ -1,10 +1,9 @@
-import { TMDB_API_KEY } from "./key.js";
+import { key } from "./key.js";
 
-const cartContents = new Set();
 
 const getTMDBData = async (url) => {
   return (await axios.get(url)).data;
-}
+};
 
 const createMovieTile = (id, poster, title, date, description) => {
   const tile = document.createElement("div");
@@ -21,17 +20,18 @@ const createMovieTile = (id, poster, title, date, description) => {
   h1.innerText = title;
   h3.innerText = date;
   h4.innerText = description;
-  buyButton.innerText = "Buy";
   trailerButton.innerText = "Trailer";
 
-  buyButton.addEventListener('click', () => {
+  buyButton.addEventListener("click", () => {
     cartContents.add(id);
     const cart = document.getElementById("cart");
     cart.innerHTML = `Your cart contains ${cartContents.size} movies`;
-  })
+  });
 
-  trailerButton.addEventListener('click', async () => {
-    const trailersData = await getTMDBData(`https://api.themoviedb.org/3//movie/${id}/videos?api_key=${TMDB_API_KEY}&language=en-US&adult=false`);
+  trailerButton.addEventListener("click", async () => {
+    const trailersData = await getTMDBData(
+      `https://api.themoviedb.org/3//movie/${id}/videos?api_key=${key}&language=en-US&adult=false`
+    );
 
     const trailer = trailersData.results.filter((trailer) => {
       return trailer.type === "Trailer";
@@ -39,8 +39,8 @@ const createMovieTile = (id, poster, title, date, description) => {
 
     !trailer.length
       ? alert("Sorry! No trailers for this film.")
-      : window.open(`https://www.youtube.com/watch?v=${trailer.at(0).key}`)
-  })
+      : window.open(`https://www.youtube.com/watch?v=${trailer.at(0).key}`);
+  });
 
   details.append(h1);
   details.append(h3);
@@ -52,12 +52,20 @@ const createMovieTile = (id, poster, title, date, description) => {
   tile.append(trailerButton);
 
   return tile;
-}
+};
 
-let movieData = await getTMDBData(`https://api.themoviedb.org/3//movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US&adult=false`);
+let movieData = await getTMDBData(
+  `https://api.themoviedb.org/3//movie/top_rated?api_key=${key}&language=en-US&adult=false`
+);
 const movies = document.getElementById("movies");
 
-movieData.results.forEach(movie => {
-  const tile = createMovieTile(movie.id, movie.poster_path, movie.title, movie.release_date, movie.overview);
+movieData.results.forEach((movie) => {
+  const tile = createMovieTile(
+    movie.id,
+    movie.poster_path,
+    movie.title,
+    movie.release_date,
+    movie.overview
+  );
   movies.appendChild(tile);
 });
