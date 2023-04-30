@@ -7,14 +7,48 @@
 }
 
 .container {
-  height: 200 vh;
-  width: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 20px;
+  height: 200vh;
+  width: 90%;
+  display: flex;
+}
+
+#pagetop {
+  display:  flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  width: 20%;
+  height: 40px;
+}
+
+#getbutton {
+  margin-left: 5px;
 }
 
 #containertop {
-    
+  height: 100vh;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 55%
 }
 
 #containerbot {
   align-items: center;
+  width: 
+}
+
+#trailer {
+  border: 0px;
+  aspect-ratio: 16/9;
+  width: 600px;
 }
