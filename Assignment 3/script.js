@@ -1,8 +1,6 @@
 import { key } from "./key.js";
 
-
 document.getElementById("getbutton").addEventListener("click", getmovie);
-
 
 function getmovie() {
   let movieId = parseInt(document.getElementById("list").value);
