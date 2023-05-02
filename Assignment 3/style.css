@@ -56,14 +56,17 @@ img {
 
 h1 {
   color: rgb(225, 218, 218);
+  font-size: 60px;
 }
 
 h3 {
-  color:rgb(175, 169, 169)
+  color:rgb(175, 169, 169);
+  font-size: 35px;
 }
 
 p {
-  color: rgb(158, 156, 156)
+  color: rgb(158, 156, 156);
+  font-size: 20px;
 }
 
 #containerbot {

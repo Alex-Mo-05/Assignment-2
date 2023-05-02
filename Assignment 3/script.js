@@ -12,7 +12,7 @@ function getmovie() {
     },
   });
 
-  let searchResult = search.then((movieData) => {
+  let Result = search.then((movieData) => {
     document.getElementById("poster").src =
       "https://image.tmdb.org/t/p/w500" + movieData.data.poster_path;
 
@@ -20,7 +20,13 @@ function getmovie() {
     document.getElementById("tagline").innerHTML = movieData.data.tagline;
     document.getElementById(
       "status"
-    ).innerHTML = `${movieData.data.status} ~ ${movieData.data.release_date}`;
+    ).innerHTML = `${movieData.data.status}: ${movieData.data.release_date}`;
+    document.getElementById(
+      "language"
+    ).innerHTML = `Languages: ${movieData.data.language}`;
+    document.getElementById(
+      "runtime"
+    ).innerHTML = `Run-time: ${movieData.data.runtime} minutes`;
     document.getElementById(
       "popularity"
     ).innerHTML = `Popularity: ${movieData.data.popularity}`;
