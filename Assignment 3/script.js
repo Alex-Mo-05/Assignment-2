@@ -12,7 +12,7 @@ function getmovie() {
     },
   });
 
-  let Result = search.then((movieData) => {
+  search.then((movieData) => {
     document.getElementById("poster").src =
       "https://image.tmdb.org/t/p/w500" + movieData.data.poster_path;
 
